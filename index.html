@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Match</title>
+  </head>
+  <body>
+    <!--main game area-->
+    <main class="wrapper">
+      <!--title-->
+      <h1>Card Match</h1>
+      <!--instructions-->
+      <p>Match all 3 pairs in 3 attempts to win.</p>
+      <!--Shows attempts left-->
+      <p>Attempts Left: <span id="attempts">3</span></p>
+      <!--Shows matches found-->
+      <p><span id="matches">0</span></p>
+      <!--message area-->
+      <p id="message">Click a card to start.</p>
+      <!--card area-->
+      <section id="board"></section>
+      <!--restart button-->
+      <button id="restartBtn">New Game</button>
+    </main>
+    <script type="module" src="./index.ts"></script>
+  </body>
+</html>
