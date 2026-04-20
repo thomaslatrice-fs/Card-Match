@@ -1,0 +1,62 @@
+$green: #1c531d;
+$blue: #238ab6;
+$pink: pink;
+$yellow: yellow;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//page dstyle
+body {
+  font-family: fantasy;
+  background: linear-gradient(135deg, $blue, $pink);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+}
+h1 {
+  color: $green;
+}
+#message {
+  color: $pink;
+  font-weight: bold;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin: 15px 0;
+}
+.card {
+  background-color: $blue;
+  color: white;
+  border: none;
+  height: 80px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.card.flipped {
+  background-color: $yellow;
+  color: black;
+}
+.card.matched {
+  background-color: $green;
+}
+#restartBtn {
+  background-color: $pink;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}

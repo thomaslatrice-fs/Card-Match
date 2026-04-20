@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Match</title>
+    <!-- Connects to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- Helps load font files faster -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Loads Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--main game area-->
+    <main class="wrapper">
+      <!--title-->
+      <h1>Card Match</h1>
+      <!--instructions-->
+      <p>Match all 3 pairs in 3 attempts to win.</p>
+      <!--Shows attempts left-->
+      <p>Attempts Left: <span id="attempts">3</span></p>
+      <!--Shows matches found-->
+      <p><span id="matches">0</span></p>
+      <!--message area-->
+      <p id="message">Click a card to start.</p>
+      <!--card area-->
+      <section id="board"></section>
+      <!--restart button-->
+      <button id="restartBtn">New Game</button>
+    </main>
+  </body>
+</html>
